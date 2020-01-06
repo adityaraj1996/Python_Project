@@ -6,7 +6,7 @@ def main():
     while not game_over:
         display_board(board)
         try:
-            selection = convert_selection(slct_position())
+            selection = convert_selection(slct_position(is_x))
             place_marker(selection,is_x, board)
     # print(selection)
 
@@ -50,9 +50,13 @@ def display_board(lst):
     for i in lst:
         print(i)
 
+# here is_x as an argument is passed to alternate between the turns
+def slct_position(is_x):
 
-def slct_position():
-    position = int(input("Hey , enter the position you want to place marker at...from 1-9"))
+    if is_x:
+        position = int(input("Hey x , enter the position you want to place marker at...from 1-9"))
+    else:
+        position = int(input("Hey O , enter the position you want to place marker at...from 1-9"))
 
 
 
