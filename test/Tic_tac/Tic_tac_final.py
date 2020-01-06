@@ -14,6 +14,7 @@ def main():
             print("please, enter a valid number between 1 and 9")
             # this is to prevent the missing turn if invalid value is entered
             continue
+
         # to see at the end of each turn if there is a draw
         game_over = is_draw(board) or is_win(board)
 
