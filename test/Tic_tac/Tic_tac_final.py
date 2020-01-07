@@ -114,6 +114,12 @@ def is_win(lst):
 
         display_board(lst)
         print(" congaratulations...!!! {} , you are the winner..!!!.".format(winner))
+        refresh = input("enter yes or no if u wanna play again").strip()
+        if refresh == "yes":
+            main()
+        else:
+            print("Closing the session...!!! Thanks For Playing the Tic-Tac-Toe")
+
         return True
     return False
 
