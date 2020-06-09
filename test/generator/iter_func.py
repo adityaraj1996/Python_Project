@@ -1,6 +1,6 @@
 # sometimes the objects over which we want to perform next()
 # is not iterator fun , so we need to convert those object to generator
-# using iter() and this is the way to perfrom next() func on normal func
+# using iter() and this is the way to perform next() func on normal func
 # def name():
 s = 'aditya'
 for i in s:

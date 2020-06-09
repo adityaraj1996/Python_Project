@@ -14,8 +14,12 @@ g = sample_gen()
 print(next(g))
 # suspend and resume functionality
 print(next(g))
+print(next(g))
+print(next(g))
 
  # output == 0
 #             1
 
+# at the end of the loop we will be getting error , stop iteration but in for loop we don't , because this error
+# gets handled
 # this is what happens at backend with for loop
